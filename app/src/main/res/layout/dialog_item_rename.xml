@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_10unit"
+        android:paddingRight="@dimen/margin_10unit"
+        android:paddingTop="@dimen/dialog_button_margin">
+        <EditText
+            android:id="@+id/filename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginBottom="@dimen/dialog_button_margin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dialog_button_margin"
+            android:layout_marginTop="@dimen/dialog_button_margin"
+            android:text="Cancel"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/detail_title_textsize" />
+        <TextView
+            android:id="@+id/btnRename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dialog_button_margin"
+            android:layout_marginTop="@dimen/dialog_button_margin"
+            android:text="Rename"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/detail_title_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

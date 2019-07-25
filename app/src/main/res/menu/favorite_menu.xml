@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/favorite_audio"
+        android:enabled="true"
+        android:title=""
+        android:icon="@drawable/audio_tab_icon"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/favorite_video"
+        android:enabled="true"
+        android:icon="@drawable/video_tab_icon"
+        android:title=""
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/favorite_image"
+        android:enabled="true"
+        android:icon="@drawable/image_tab_icon"
+        android:title=""
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/favorite_document"
+        android:enabled="true"
+        android:icon="@drawable/document_tab_icon"
+        android:title=""
+        app:showAsAction="ifRoom" />
+
+</menu>

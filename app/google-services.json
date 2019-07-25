@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "892975447427",
+    "firebase_url": "https://nexa-player.firebaseio.com",
+    "project_id": "nexa-player",
+    "storage_bucket": "nexa-player.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892975447427:android:294f8f9a9c6e5dd4",
+        "android_client_info": {
+          "package_name": "com.nexa.player"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892975447427-tajqb7tunf2ue54b7qnih0r5cm43296j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nexa.player",
+            "certificate_hash": "10f93eecbfdd8a7df52e4ea40be05e79a8b1504c"
+          }
+        },
+        {
+          "client_id": "892975447427-oje3jidh8op9p8fefd4irmnj2fjeps6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKk2z4yobIWEl2KSW4h2qTiDZYJVq1Il8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892975447427-oje3jidh8op9p8fefd4irmnj2fjeps6c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

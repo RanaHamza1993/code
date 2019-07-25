@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <com.google.android.gms.ads.formats.NativeAdView
+        android:id="@+id/na_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+        <RelativeLayout
+            android:id="@+id/na_ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/na_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/na_icon"
+                android:layout_toRightOf="@id/na_icon"
+                android:layout_toStartOf="@+id/install"
+                android:layout_toLeftOf="@+id/install"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/na_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="16sp" />
+
+                <RatingBar
+                    android:id="@+id/rating"
+                    style = "?android:attr/ratingBarStyleSmall"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stepSize="0.5"
+                    android:progressTint="@color/rating_tint"
+                    android:max="5"
+                    android:min="0"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="4.5"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/install"
+                android:layout_width="104dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/margin_10unit"
+                android:background="@drawable/rounded_empty_button"
+                android:text="install"
+                android:textColor="@color/colorPrimaryDark" />
+        </RelativeLayout>
+    </com.google.android.gms.ads.formats.NativeAdView>
+</RelativeLayout>
+

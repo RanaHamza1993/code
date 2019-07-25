@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/artist_item"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/folder_icon"
+                android:layout_width="@dimen/folder_item_icon_width"
+                android:layout_centerInParent="true"
+                android:layout_height="@dimen/folder_item_icon_height"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/text_layout"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/folder_item_vertical_margin"
+            android:paddingBottom="@dimen/folder_item_vertical_margin"
+            android:paddingRight="@dimen/folder_item_horizontal_margin"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/artist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/folder_item_name_textsize">
+            </TextView>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/item_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/margin_2unit"
+                android:text="12 files"
+                android:textColor="@color/colorTextGrey"
+                android:textSize="@dimen/folder_item_count_textsize">
+            </TextView>
+        </LinearLayout>
+
+</LinearLayout>

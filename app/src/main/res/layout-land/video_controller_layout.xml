@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#69000000"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10unit"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/vlc_overlay_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="8"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:singleLine="true"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/btn_video_options"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_video_options" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/control_layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/margin_16unit"
+        android:layout_marginTop="@dimen/margin_50unit"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <ImageView
+            android:id="@+id/video_brightness_low"
+            style="@style/VideoControllerSecondaryControlButtonStyle"
+            android:src="@drawable/ic_brightness_low" />
+
+        <ImageView
+            android:id="@+id/video_volume_low"
+            style="@style/VideoControllerSecondaryControlButtonStyle"
+            android:src="@drawable/ic_volume_down" />
+
+        <ImageView
+            android:id="@+id/vlc_previous"
+            style="@style/VideoControllerSecondaryControlButtonStyle"
+            android:src="@drawable/ic_previous_drawable" />
+
+        <ImageView
+            android:id="@+id/vlc_rewind"
+            style="@style/VideoControllerMainControlButtonStyle"
+            android:src="@drawable/ic_rewind" />
+
+        <ImageView
+            android:id="@+id/vlc_button_play_pause"
+            style="@style/VideoControllerMainControlButtonStyle"
+            android:src="@drawable/ic_play_black" />
+
+        <ImageView
+            android:id="@+id/vlc_forward"
+            style="@style/VideoControllerMainControlButtonStyle"
+            android:src="@drawable/ic_forward" />
+
+        <ImageView
+            android:id="@+id/vlc_next"
+            style="@style/VideoControllerSecondaryControlButtonStyle"
+            android:src="@drawable/ic_next_drawable" />
+
+        <ImageView
+            android:id="@+id/video_volume_high"
+            style="@style/VideoControllerSecondaryControlButtonStyle"
+            android:src="@drawable/ic_volume_up" />
+
+        <ImageView
+            android:id="@+id/video_brightness_high"
+            style="@style/VideoControllerSecondaryControlButtonStyle"
+            android:src="@drawable/ic_brightness_high" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:id="@+id/vlc_seekbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_control_layout" />
+
+        <LinearLayout
+            android:id="@+id/bottom_control_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10unit"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/vlc_current_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "
+                    android:textColor="@android:color/white"></TextView>
+
+                <TextView
+                    android:id="@+id/vlc_total_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhitegrey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/video_lock"
+                    style="@style/VideoControllerBottomButtonStyle"
+                    android:background="@drawable/control_lock_icon" />
+
+                <ImageView
+                    android:id="@+id/video_caption"
+                    style="@style/VideoControllerBottomButtonStyle"
+                    android:src="@drawable/ic_closed_caption_logo" />
+
+                <ImageView
+                    android:id="@+id/video_musicplayer"
+                    style="@style/VideoControllerBottomButtonStyle"
+                    android:src="@drawable/music_player" />
+
+                <ImageView
+                    android:id="@+id/video_fullscreen"
+                    style="@style/VideoControllerBottomButtonStyle"
+                    android:src="@drawable/ic_full_screen" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

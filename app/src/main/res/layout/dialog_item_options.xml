@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/dialog_button_margin"
+    android:background="@color/colorWhite"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/share"
+        android:text="@string/dialog_share"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_empty_button"
+        android:layout_width="@dimen/dialog_button_width"
+        android:layout_height="@dimen/dialog_button_height" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_marginTop="@dimen/dialog_button_margin"
+        android:text="@string/dialog_delete"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_empty_button"
+        android:layout_width="@dimen/dialog_button_width"
+        android:layout_height="@dimen/dialog_button_height" />
+
+    <Button
+        android:id="@+id/details"
+        android:layout_marginTop="@dimen/dialog_button_margin"
+        android:text="@string/dialog_details"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_empty_button"
+        android:layout_width="@dimen/dialog_button_width"
+        android:layout_height="@dimen/dialog_button_height" />
+
+</LinearLayout>

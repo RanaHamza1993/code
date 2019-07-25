@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/video_image_item_height"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/select_layout"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/select_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:visibility="gone"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/icon_layout"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/video_image_icon_size"
+        android:layout_height="@dimen/video_image_icon_size"
+        android:layout_toRightOf="@+id/select_layout"
+        android:padding="@dimen/margin_8unit">
+
+        <ImageView
+            android:id="@+id/document_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_document_blue" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/folder_item_horizontal_margin"
+        android:layout_toLeftOf="@+id/details_layout"
+        android:layout_toRightOf="@+id/icon_layout">
+
+        <LinearLayout
+            android:id="@+id/file_details_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/file_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:text="Audio.mp3"
+                    android:textColor="@color/colorTextDarkGrey"
+                    android:textSize="@dimen/video_name_textsize" />
+
+               </RelativeLayout>
+
+            <TextView
+                android:id="@+id/file_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:text="folder/folder2/folder3"
+                android:textColor="@color/colorTextDarkGrey"
+                android:textSize="@dimen/video_time_textsize"
+                android:visibility="gone"></TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/details_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/margin_6unit"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/file_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24/11/2017"
+            android:textColor="@color/colorTextDarkGrey"
+            android:textSize="@dimen/video_time_textsize"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/file_extension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mp3"
+            android:textColor="@color/colorTextDarkGrey"
+            android:textSize="@dimen/video_time_textsize"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/file_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8mb"
+            android:textColor="@color/colorTextDarkGrey"
+            android:textSize="@dimen/video_time_textsize"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

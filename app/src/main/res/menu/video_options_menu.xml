@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/audio_delay"
+        android:title="Set audio delay"
+        android:visible="true"
+        android:showAsAction="withText"
+        tools:ignore="AppCompatResource" />
+
+</menu>

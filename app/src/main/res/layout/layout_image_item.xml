@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/video_image_item_height"
+        android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/select_layout"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/select_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:visibility="gone"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/thumbnail_layout"
+            android:layout_width="@dimen/video_image_layout_width"
+            android:padding="@dimen/video_image_margin"
+            android:layout_toRightOf="@+id/select_layout"
+            android:layout_height="@dimen/video_image_item_height">
+            <ImageView
+                android:id="@+id/image_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_height="match_parent"
+                android:background="@color/colorTextBlack"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/details_layout"
+                android:layout_toRightOf="@+id/thumbnail_layout"
+                android:layout_marginRight="@dimen/folder_item_horizontal_margin">
+                <LinearLayout
+                    android:id="@+id/file_details_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/file_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="3"
+                            android:paddingRight="@dimen/activity_horizontal_margin"
+                            android:text="Image.jpg"
+                            android:textColor="@color/colorTextDarkGrey"
+                            android:textSize="@dimen/video_name_textsize" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_new"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/file_name"
+                            android:background="@color/colorNewRed"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/margin_2unit"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NEW"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/new_name_textsize" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/file_path"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="3"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:text="folder/folder2/folder3"
+                        android:textColor="@color/colorTextDarkGrey"
+                        android:textSize="@dimen/video_time_textsize"
+                        android:visibility="gone"></TextView>
+                </LinearLayout>
+            </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/details_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/margin_6unit"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/file_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24/11/2017"
+            android:textColor="@color/colorTextDarkGrey"
+            android:textSize="@dimen/video_time_textsize"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/file_extension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mp4"
+            android:textColor="@color/colorTextDarkGrey"
+            android:textSize="@dimen/video_time_textsize"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/file_dimension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1200x1600"
+            android:textColor="@color/colorTextDarkGrey"
+            android:textSize="@dimen/video_time_textsize"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/file_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8mb"
+            android:textColor="@color/colorTextDarkGrey"
+            android:textSize="@dimen/video_time_textsize"
+            android:visibility="gone" />
+    </LinearLayout>
+    </RelativeLayout>

@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">4K Video player</string>
+
+    <string name="title_view_detials">View Details</string>
+    <string name="title_about">About</string>
+    <string name="title_contact">Contact</string>
+    <string name="search_hint">Search</string>
+    <string name="contact_email"><u>nexaplayerapp@gmail.com</u></string>
+
+    <string name="loading">Loading Files...</string>
+    <string name="items_not_found">No Items Found</string>
+
+    <string name="item_selected_count">%s item selected</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="dialog_share">Share</string>
+    <string name="dialog_delete">Delete</string>
+    <string name="dialog_details">Details</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_title">Are you sure you want to delete files?</string>
+    <!--Google Admobs-->
+    <string name="admobs_app_id">ca-app-pub-1402293978206326~8076154623</string>
+
+    <!--FB ads-->
+    <string name="fb_ads_placement_id">232262130644725_232262550644683</string>
+
+    <!--AppNext ads-->
+    <string name="appnext_ads_placement_id">16b11c4e-4b39-48bf-80a4-6192e6fc7c13</string>
+    <!--MoPub ads
+    <string name="mopub_ads_placement_id">11a17b188668469fb0412708c3d16813</string>-->
+    <string name="mopub_ads_placement_id">353a84f950a6463689dca1e2b8bb3460</string>
+    <!--dialog details-->
+    <string name="extension">Extension</string>
+    <string name="size">Size</string>
+    <string name="date">Date</string>
+    <string name="path">Path</string>
+    <string name="duration">Duration</string>
+    <string name="resolution">Resolution</string>
+    <string name="title_activity_audio_tabs">AudioTabsActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="audio_settings_title">Audio Settings</string>
+    <string name="video_settings_title">Video Settings</string>
+    <string name="image_settings_title">Image Settings</string>
+    <string name="document_settings_title">Document Settings</string>
+
+    <!--Setting details-->
+    <string name="view_details_description_audio">Select list of details to be displayed on audio item</string>
+    <string name="view_details_description_video">Select list of details to be displayed on video item</string>
+    <string name="view_details_description_image">Select list of details to be displayed on image item</string>
+    <string name="view_details_description_document">Select list of details to be displayed on document item</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="shuffle_details">Shuffle audio files while playing</string>
+    <string name="auto_resume">Auto Resume</string>
+    <string name="auto_resume_details">Select whether to resume from point where you stopped</string>
+    <string name="hidden_files">Show hidden files and folders</string>
+    <string name="hidden_files_details">Show hidden folders and files starting with \".\" (dot)</string>
+    <string name="audio_delay">Audio delay</string>
+    <string name="app_admob_app_id">ca-app-pub-1226353810994807~8591418306</string>
+    <string name="app_banner_ad_unit_id_1">ca-app-pub-1226353810994807/3852374747</string>
+    <string name="app_interstitial_ad_unit_id">ca-app-pub-5281860984128274/3771868405</string>
+</resources>
